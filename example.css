@@ -1,19 +1,10 @@
-:root{ /*Creating variables*/
---background-color:#A383B0;
---color:#ffffff;
-}
-
-* {
-    box-sizing: border-box;
-    padding: 0;
+body {
+    background-color: #719fb0;
+    font-family: "VT323", monospace;
     margin: 0;
-}
-
-body{
-    background-color:seashell
-}
-/*HEADER*/
-h1 {
+  }
+  
+  h1 {
     font-family:cursive;
     font-size: 2.5rem;
     color:purple;
@@ -47,27 +38,18 @@ h1 {
     header {
       background-color:#A383B0;
       padding: 0.8em 0;
-      height:7vw;
       box-shadow: 2px 2px 10px #f1f6f9;
-
       }
 
   
           header nav ul {
             list-style-type: none; /* Allows the nav to not show as a list*/
-            height:50px;
-         
         }
         
          header nav ul li {
             display: inline-block; /*Used to display an element as an inline-level block container*/
             margin-left: 25px; /*sets the margin area on the left side of an element.*/
-            text-align: left;
-            margin-top:2vw;
-            margin-right:2vw;
-            margin-left:1vw;
         }
-        
           nav li {
               margin-left: 2em;
               list-style-type:none;
@@ -77,7 +59,6 @@ h1 {
               nav a {
                   text-decoration: none;
                   list-style-type:none;
-                  
                 }
                 
                 
@@ -118,78 +99,8 @@ h1 {
                       }
                     
                       nav li {
-                        margin: 3rem 0;
+                        margin: 0.8em 0;
                       }
                     }
                 
-
-/*Main section*/
-
-
-/* Bottom right text */
-.text-block {
-
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        background-color: black;
-        color: white;
-        padding-left: 30px;
-        padding-right: 30px;
-        font-size:2rem;
-      
-  }
-.hero {
-    height: 600px;
-    width: 100%;
-   /* margin-bottom: 25px;*/
-    background-image: url(/Assets/Untitled_2_50.png);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-
-  p{
-
-font-size:20px;
-  }
   
-/* Create two equal columns that floats next to each other */
-.column {
-    float: left;
-    width:30%;
-    padding:5px;
-    height: 300px; /* Should be removed. Only for demonstration */
-    margin-right:10vw;
-    margin-top: 2vw;
-
-  }
-  .column1{
-    float: left;
-    width:30%;
-    padding:5px;
-    height: 300px; /* Should be removed. Only for demonstration */
-    margin-left:5vw;
-    margin-top: 2vw;
-
-  }
-
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-  
-  
-    clear: both;
-  }
-
-  .text{
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      font-size:2rem;
-       
-  } 
-  .text1{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size:10rem;
-     
-}
