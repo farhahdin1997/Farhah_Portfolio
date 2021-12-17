@@ -40,6 +40,7 @@ nav a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 header {
@@ -78,87 +79,182 @@ nav a:focus {
   color: purple;
 }
 
+
 /*Main section*/
 
-/*Top Picture Text*/
-.text-block { 
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background-color: black;
+.hero{
+    height: 800px; /*Setting the height of yhr element*/
+    width: 100%; /*Setting the width size*/
+    margin-bottom: 25px; /*sets the margin area on the bottom side of an element.*/
+    background-image: url("/Assets/Untitled_2_50.png"); /*Setting the image background*/
+    background-size: cover; /*specifies the size of the background images to covering the element */ 
+    background-position: center; /*postioning of the image*/
+}
+      /* Bottom right text */
+      .text-block {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background-color: black;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size:2em;
+      }
+
+/* Cards*/
+
+/*Formatting the card*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+}
+.cards{
+  max-width: 2000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+.cards h2.header{
+  font-size: 40px;
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.services{
+  display: flex;
+  align-items: center;
+}
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 4px;
+  transition: all .3s ease;
+}
+.content .fab{
+  font-size: 70px;
+  margin: 16px 0;
+}
+
+ .threading.fab{
+  font-size: 70px;
+  margin: 16px 0;
+}
+.content > *{
+  flex: 1 1 100%;
+}
+.content:hover{
   color: white;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-size: 2rem;
 }
-/*Styling for Top Picture*/
-.hero {
-  height: 600px;
-  width: 100%;
-  /* margin-bottom: 25px;*/
-  background-image: url(/Assets/Untitled_2_50.png);
-  background-size: cover;
-  background-position: center;
-  position: relative;
+.content:hover a{
+  border-color: white;
+  background: white;
 }
-
-p {
-  font-size: 20px;
+.content-1:hover{
+  border-color: mediumpurple;
+  background:#54076C;
 }
-
-/* About me section*/
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
-  margin-right: 5vw;
-  margin-top: 6vw;
+.content-1:hover a{
+  color:#54076C;
 }
-.column1 {
-  float: left;
-  width: 20%;
-  padding: 5px;
-
-  margin-left: 4vw;
-  margin-top: 6vw;
+.content-2:hover{
+  border-color: #54076C;
+  background: #54076C;
 }
-
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
-  margin-right: 5vw;
-  margin-top: 6vw;
+.content-2:hover a{
+  color: #54076C;
 }
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-
-  clear: both;
+.content-3:hover{
+  border-color: #54076C;
+  background: #54076C;
 }
-
-/*Text for the about me section*/
-.text {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 3rem;
+.content-3:hover a{
+  color:#54076C;
 }
-.text1 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 10rem;
+.content h2{
+  font-size: 30px;
+  margin: 16px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.content p{
+  font-size: 17px;
+  font-family: 'Poppins',sans-serif;
+}
+.content a{
+  margin: 22px 0;
+  background: #685904;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid black;
+  padding: 15px 0;
+  border-radius: 25px;
+  transition: .3s ease;
+}
+.content a:hover{
+  border-radius: 4px;
+}
+@media (max-width: 900px) {
+  .services{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
+.headings{
+ text-align: left;
+
+}
+/*Formatting the card*/
+
+@media (max-width: 900px) {
+  .services{
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+@media screen and (min-width: 768px) {
+  /* on tablets, set columns to only be 50% of the width and not grow */
+  .card-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* select the last child to grow to full width if it has space to grow */
+  .card-column:last-child {
+    flex-grow: 1;
+  }
+}
+
+/* media query for larger screens */
+@media screen and (min-width: 992px) {
+  header {
+    width: 75%;
+  }
+
+  .card-column {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+}
+
+
+/*Footer*/
 
 
 
 
-
-
-/*Responsive */
-
-@media screen and (max-width: 992px) {
-  .container {
+  /* Nav*/
+    .container {
     text-align: center;
   }
 
@@ -174,30 +270,6 @@ p {
     margin: 0.8em 0;
   }
 
-  .column {
-    width: 100%;
+  header{
+      height: 70px;
   }
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    text-align: center;
-  }
-
-  .container-nav {
-    flex-direction: column;
-  }
-
-  nav ul {
-    flex-direction: column;
-  }
-
-  nav li {
-    margin: 3rem 0;
-  }
-
-  .column {
-    width: 100%;
-    line-height: 1;
-  }
-}
