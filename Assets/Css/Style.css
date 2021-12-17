@@ -14,7 +14,7 @@ body {
   background-color: seashell;
 }
 /*HEADER*/
-h1 {
+.h1 {
   font-family: cursive;
   font-size: 2.5rem;
   color: purple;
@@ -103,7 +103,6 @@ nav a:focus {
       }
 
 /* Cards*/
-
 /*Formatting the card*/
 *{
   margin: 0;
@@ -189,15 +188,16 @@ nav a:focus {
   font-family: 'Poppins',sans-serif;
 }
 .content a{
-  margin: 22px 0;
+  margin: 10px 0;
   background: #685904;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   border: 1px solid black;
-  padding: 15px 0;
-  border-radius: 25px;
+  padding: 10px 0;
+  border-radius: 20px;
   transition: .3s ease;
+
 }
 .content a:hover{
   border-radius: 4px;
@@ -210,10 +210,18 @@ nav a:focus {
 }
 
 .headings{
- text-align: left;
-
+  font-size:3rem;
+text-align: center;
 }
-/*Formatting the card*/
+
+.headings2{
+  font-size:2rem;
+text-align: center;
+}
+
+
+
+/*Responsive*/
 
 @media (max-width: 900px) {
   .services{
@@ -224,16 +232,8 @@ nav a:focus {
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
 @media screen and (min-width: 768px) {
   /* on tablets, set columns to only be 50% of the width and not grow */
-  .card-column {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-
-  /* select the last child to grow to full width if it has space to grow */
-  .card-column:last-child {
-    flex-grow: 1;
-  }
 }
+
 
 /* media query for larger screens */
 @media screen and (min-width: 992px) {
@@ -241,10 +241,7 @@ nav a:focus {
     width: 75%;
   }
 
-  .card-column {
-    flex: 0 0 33.333%;
-    max-width: 33.333%;
-  }
+
 }
 
 
@@ -253,23 +250,5 @@ nav a:focus {
 
 
 
-  /* Nav*/
-    .container {
-    text-align: center;
-  }
 
-  .container-nav {
-    flex-direction: column;
-  }
 
-  nav ul {
-    flex-direction: column;
-  }
-
-  nav li {
-    margin: 0.8em 0;
-  }
-
-  header{
-      height: 70px;
-  }
