@@ -128,7 +128,7 @@ nav li {
   margin: 10px;
   max-width: 2000px;
   height:300px;
-  width:500px;
+  width:300px;
  background:mistyrose
   
 }
@@ -283,31 +283,7 @@ nav li {
   padding: 4rem;
 }
 
-/*contact form*/
-
-
-
-
-/*Work section*/
-.heading{
-  text-align: center;
-  font-size: 1.5rem;
-}
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-
+/*portfolio*/
 /* Center website */
 .main {
   max-width: 1000px;
@@ -340,7 +316,6 @@ h1 {
   content: "";
   display: table;
   clear: both;
- 
 }
 
 /* Content */
@@ -348,17 +323,16 @@ h1 {
   background-color: white;
   padding: 10px;
 
+  
 }
-.contact{
-  text-align: center;
+.content1 {
+  background-color:white;
+  padding: 30px;
+  
+
+  
 }
 
-.heading1{
-  text-align: center;
-  margin-top:40px;
-  font-size: 2rem;
-
-}
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
   .column {
@@ -371,6 +345,30 @@ h1 {
   .column {
     width: 100%;
   }
+}
+
+
+.heading1{
+  text-align: center;
+  margin-top:40px;
+  font-size: 2rem;
+
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+  
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  
+  }
+  
 }
 
 .Portfolio{
