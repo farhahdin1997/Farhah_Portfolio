@@ -11,16 +11,20 @@ body {
 
 /*Main section*/
 
-.hero{
-    height: 800px; /*Setting the height of yhr element*/
-    width: 100%; /*Setting the width size*/
-    margin-bottom: 25px; /*sets the margin area on the bottom side of an element.*/
-    background-image: url("/Assets/Untitled_2_50.png"); /*Setting the image background*/
-    background-size: cover; /*specifies the size of the background images to covering the element */ 
-    background-position: center; /*postioning of the image*/
+.contact{
+  background: grey;
 }
+
+/*hero{
+    height: 800px; /*Setting the height of yhr element*/
+   /* width: 100%; /*Setting the width size*/
+   /* margin-bottom: 25px; /*sets the margin area on the bottom side of an element.*/
+    /*background-image: url("./Assets/Untitled_2_50.png"); /*Setting the image background*/
+    /*background-size: cover; /*specifies the size of the background images to covering the element */ 
+    /*background-position: center; /*postioning of the image*/
+
       /* Bottom right text */
-      .text-block {
+      /*.text-block {
         position: absolute;
         bottom: 20px;
         right: 20px;
@@ -29,7 +33,46 @@ body {
         padding-left: 20px;
         padding-right: 20px;
         font-size:2em;
-      }
+      }/*
+
+/*--*/
+/* Layout: */
+
+.col-main {
+  flex: 1;  
+}  
+
+.col-complementary {
+  flex: 1;  
+}
+
+/* Responsive: */
+
+@media only screen and (min-width: 640px) {
+  .layout {
+    display: flex;
+  }
+}
+
+/* etc */
+
+body {
+  margin: 1.5em;
+}
+
+.container {
+  max-width: 60em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.col {
+  padding: 1em;
+  margin: 0 2px 2px 0;
+ 
+}
+
+
 /*nav bar*/
 
 .topNav{
@@ -143,7 +186,9 @@ nav li {
   padding: 10px;
 }
 
-
+.social{
+  background-color:linen;
+}
 
 
 .bg-secondary,
@@ -176,6 +221,12 @@ nav li {
 
 .text-center {
   text-align: center;
+}
+
+
+.heading{
+  text-align: right;
+
 }
 
 
@@ -328,9 +379,7 @@ h1 {
 .content1 {
   background-color:white;
   padding: 30px;
-  
 
-  
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -348,7 +397,7 @@ h1 {
 }
 
 
-.heading1{
+.heading{
   text-align: center;
   margin-top:40px;
   font-size: 2rem;
@@ -372,5 +421,67 @@ h1 {
 }
 
 .Portfolio{
-text-align:center ;
+background-color: maroon;
+}
+
+/*contact*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: black;
+}
+
+.container1{
+  border-radius: 5px;
+  background-color:lightgray; 
+  padding: 10px;
+  
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
