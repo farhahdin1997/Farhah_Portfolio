@@ -16,4 +16,5 @@ Bellow is a screenshot of my project:
 
 
 Deployment Link:
+https://farhahdin1997.github.io/Farhah_Portfolio/
 
