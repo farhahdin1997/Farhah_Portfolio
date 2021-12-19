@@ -362,6 +362,12 @@ h1 {
   
 }
 
+@media screen and (max-width: 600px) {
+  
+  #footer a {
+  color:rosybrown;
+}
+}
 
 
 footer{
@@ -398,3 +404,4 @@ footer{
   font-size:1rem;
   color: white;
 }
+
