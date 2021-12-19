@@ -1,3 +1,6 @@
+:root{
+  --background-color:rosybrown;
+}
 
 * {
   box-sizing: border-box;
@@ -34,7 +37,7 @@ body {
   padding: 5px;
   margin: 0 auto;
   border-radius: 25%;
-  background-color:rosybrown;
+  background-color:var(--background-color);
 }
 
 @media (min-width: 800px) {
@@ -62,32 +65,16 @@ body {
 
 .about_me_heading{
   font-size: 2rem;
+  text-align: center;
 }
 .contact{
   background: grey;
 }
+ .name{
+   font-size:2rem;
+   
+ }
 
-/*hero{
-    height: 800px; /*Setting the height of yhr element*/
-   /* width: 100%; /*Setting the width size*/
-   /* margin-bottom: 25px; /*sets the margin area on the bottom side of an element.*/
-    /*background-image: url("./Assets/Untitled_2_50.png"); /*Setting the image background*/
-    /*background-size: cover; /*specifies the size of the background images to covering the element */ 
-    /*background-position: center; /*postioning of the image*/
-
-      /* Bottom right text */
-      /*.text-block {
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        background-color: black;
-        color: white;
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size:2em;
-      }/*
-
-/*--*/
 /* Layout: */
 
 .col-main {
@@ -134,7 +121,7 @@ body {
 }
 
 nav{
-  background-color: rosybrown;
+  background-color: var(--background-color);
 }
 
 nav ul{
@@ -213,6 +200,7 @@ nav li {
   overflow: auto;
   padding: 0 40px;
 
+
 }
 .card {
   background-color: #fff;
@@ -229,7 +217,7 @@ nav li {
 }
 
 .card:hover{
-  background-color: rosybrown;
+  background-color: var(--background-color);
 }
 .card img {
   width: 200px;
