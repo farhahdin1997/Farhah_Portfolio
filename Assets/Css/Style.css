@@ -114,6 +114,18 @@ body {
 
 /*nav bar*/
 
+
+
+header {
+  height: 10 rem;
+  width: 100rem;
+  display: flex;
+  background-color:rosybrown;
+  text-align: center;
+  width:100%;
+}
+
+/* Nav bar */
 .topNav{
   max-width: 100%;
   width:100%;
@@ -127,6 +139,7 @@ nav{
 nav ul{
   list-style-type: none;
   padding:0px;
+  text-align: center;
 }
 
 nav a {
@@ -140,7 +153,6 @@ padding:30px;
 }
 
 
-
 @media screen and (min-width :768px){
 nav ul{
   display: flex;
@@ -150,7 +162,7 @@ nav ul{
 nav li {
   flex: 1 1 0;
 
-}
+} 
 }
 
 /*Responsive*/
@@ -178,20 +190,20 @@ nav li {
 
 /*Social media section*/
 
-.socials .flex {
+.social .flex {
   flex-wrap: wrap;
 }
-.socials .card {
+.social .card {
   text-align: center;
   margin: 18px 10px 40px;
   transition: transform 0.2s ease-in;
 }
-.socials .card h4 {
+.social .card h4 {
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-.socials .card:hover {
+.social .card:hover {
   transform: translateY(-15px);
 }
 .container {
@@ -226,7 +238,7 @@ nav li {
   padding: 10px;
 }
 
-.social{
+#social{
   background-color:linen;
 }
 
@@ -290,89 +302,6 @@ nav li {
   grid-template-columns: repeat(3, 1fr);
 }
 
-/* Margin */
-.my-1 {
-  margin: 1rem 0;
-}
-
-.my-2 {
-  margin: 1rem 0;
-  text-align: left;
-  font-size: 2rem;
-}
-
-.my-3 {
-  margin: 2rem 0;
-}
-
-.my-4 {
-  margin: 3rem 0;
-}
-
-.my-5 {
-  margin: 4rem 0;
-}
-
-.m-1 {
-  margin: 1rem;
-}
-
-.m-2 {
-  margin: 1.5rem;
-}
-
-.m-3 {
-  margin: 2rem;
-}
-
-.m-4 {
-  margin: 3rem;
-}
-
-.m-5 {
-  margin: 4rem;
-}
-
-/* Padding */
-.py-1 {
-  padding: 1rem 0;
-}
-
-.py-2 {
-  padding: 1.5rem 0;
-}
-
-.py-3 {
-  padding: 2rem 0;
-}
-
-.py-4 {
-  padding: 3rem 0;
-}
-
-.py-5 {
-  padding: 4rem 0;
-}
-
-.p-1 {
-  padding: 1rem;
-}
-
-.p-2 {
-  padding: 1.5rem;
-}
-
-.p-3 {
-  padding: 2rem;
-}
-
-.p-4 {
-  padding: 3rem;
-}
-
-.p-5 {
-  padding: 4rem;
-}
 
 /*portfolio*/
 /* Center website */
@@ -458,11 +387,6 @@ h1 {
   
   }
   
-}
-
-/* portfolio*/
-.social2{
-  background-color:pink ;
 }
 
 
