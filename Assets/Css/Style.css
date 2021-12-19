@@ -110,7 +110,7 @@ body {
 /*nav bar*/
 
 header {
-  height: 10 rem;
+  height: 15 rem;
   width: 100rem;
   display: flex;
   background-color:rosybrown;
@@ -143,12 +143,21 @@ header {
   background-color: var(--background-color);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .navbar a {
     float: none;
     display: block;
     width: 100%;
-    text-align: left;
+    text-align: center;
+  }
+  nav ul{
+    display: flex;
+    justify-content:flex-start;
+  }
+  
+  nav li {
+    flex: 1 1 0;
+  
   }
 }
 
