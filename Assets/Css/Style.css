@@ -15,9 +15,9 @@ body {
 /*Main section*/
 /*About me*/
 #about {
-  display: flex;
+  display: flex; /*he flex property sets the flexible length on flexible items.*/
   padding: 20px 0;
-  min-height: 50vh;
+  min-height: 50vh; /*VH allows it to stay true when the viewport is resized*/
   align-items: center;
 }
 
@@ -28,15 +28,16 @@ body {
 
 #about .contents {
   display: grid;
-  grid-gap: 50px;
-  grid-template-columns: 1fr;
+  grid-gap: 50px; /* sets the gaps between rows and columns.*/
+  grid-template-columns: 1fr; /*The grid-template-columns CSS property defines the line names and track sizing functions of the grid columns*/
+/*Fr is a fractional unit*/
 }
 
 #about .contents img {
   width: 300px;
   padding: 5px;
   margin: 0 auto;
-  border-radius: 25%;
+  border-radius: 25%; /*The border-radius property defines the radius of the element's corners.*/
   background-color:var(--background-color);
 }
 
@@ -60,7 +61,7 @@ body {
 }
 
 .about_me_text{
-  font-size:2rem;
+  font-size:2rem; /*REM - Relative to font-size of the root element*/
 }
 
 .about_me_heading{
@@ -75,25 +76,20 @@ body {
    
  }
 
-/* Layout: */
-
 .col-main {
   flex: 1;  
 }  
 
 .col-complementary {
-  flex: 1;  
+  flex: 1;   /*The flex property is a sub-property of the Flexible Box Layout module.*/
 }
-
-/* Responsive: */
 
 @media only screen and (min-width: 640px) {
   .layout {
-    display: flex;
+    display: flex; /*The flex property is a sub-property of the Flexible Box Layout module.*/
   }
 }
 
-/* etc */
 
 body {
   margin: 1.5em;
@@ -101,6 +97,7 @@ body {
 
 .container {
   max-width: 60em;
+  /*Margins are used to create space around elements, outside of any defined borders.*/
   margin-right: auto;
   margin-left: auto;
 }
@@ -113,8 +110,6 @@ body {
 
 
 /*nav bar*/
-
-
 
 header {
   height: 10 rem;
@@ -137,7 +132,7 @@ nav{
 }
 
 nav ul{
-  list-style-type: none;
+  list-style-type: none; /*Ensures the nav wont display as a list*/
   padding:0px;
   text-align: center;
 }
@@ -147,7 +142,7 @@ nav a {
 text-decoration: none;
 text-align:center;
 color:#ffffff;
-display: block;
+display: block; /*display as a block element*/
 padding:30px;
 /*background-color: #777;*/
 }
@@ -157,6 +152,8 @@ padding:30px;
 nav ul{
   display: flex;
   justify-content:flex-start;
+  /*flex-start (default): items are packed toward the start lin*/
+/*justify-content property defines how the browser distributes space between and around content*/
 }
 
 nav li {
@@ -165,33 +162,16 @@ nav li {
 } 
 }
 
-/*Responsive*/
-
-@media (max-width: 900px) {
-  .services{
-    display: flex;
-    flex-direction: column;
-  }
-}
-/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
-@media screen and (min-width: 768px) {
-  /* on tablets, set columns to only be 50% of the width and not grow */
-}
-
-
-/* media query for larger screens */
 @media screen and (min-width: 992px) {
   header {
     width: 75%;
   }
-
-
 }
 
 /*Social media section*/
 
 .social .flex {
-  flex-wrap: wrap;
+  flex-wrap: wrap; /*The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines*/
 }
 .social .card {
   text-align: center;
@@ -211,9 +191,8 @@ nav li {
   margin: 0 auto;
   overflow: auto;
   padding: 0 40px;
-
-
 }
+
 .card {
   background-color: #fff;
   color: #333;
